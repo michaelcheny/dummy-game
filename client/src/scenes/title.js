@@ -76,7 +76,8 @@ export default class Title extends Phaser.Scene {
       'pointerdown',
       function () {
         this.scene.launch(CONSTANTS.SCENES.PLAYING);
-        this.startGameText.destroy();
+        // this.startGameText.destroy();
+        this.startGameText.visible = false;
       },
       this
     );
@@ -95,7 +96,6 @@ export default class Title extends Phaser.Scene {
   }
 
   update() {
-    // this.background.x -= 0.1;
     const cam = this.cameras.main;
     const speed = 5;
     if (this.cursors.left.isDown) {
