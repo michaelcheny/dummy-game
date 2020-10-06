@@ -41,6 +41,11 @@ export default class Title extends Phaser.Scene {
     this.load.image('shadows', 'src/assets/background/Layer_0009_2.png');
     this.load.image('sky', 'src/assets/background/Layer_0010_1.png');
     this.cursors = this.input.keyboard.createCursorKeys();
+
+    // this.upKey = this.input.keyboard.addKey('w');
+    // this.downKey = this.input.keyboard.addKey('s');
+    this.leftKey = this.input.keyboard.addKey('a');
+    this.rightKey = this.input.keyboard.addKey('d');
   }
 
   create() {
@@ -83,13 +88,13 @@ export default class Title extends Phaser.Scene {
     );
 
     this.startGameText.on('pointerover', () => {
-      self.startGameText.setColor('#ff69b4');
-      self.startGameText.setFontSize(21);
+      this.startGameText.setColor('#ff69b4');
+      this.startGameText.setFontSize(21);
     });
 
     this.startGameText.on('pointerout', () => {
-      self.startGameText.setColor('#00ff22');
-      self.startGameText.setFontSize(20);
+      this.startGameText.setColor('#00ff22');
+      this.startGameText.setFontSize(20);
     });
 
     this.cameras.main.setBounds(0, 0, width * 10, height);
@@ -98,10 +103,10 @@ export default class Title extends Phaser.Scene {
   update() {
     const cam = this.cameras.main;
     const speed = 5;
-    if (this.cursors.left.isDown) {
+    if (this.leftKey.isDown) {
       // move left
       cam.scrollX -= speed;
-    } else if (this.cursors.right.isDown) {
+    } else if (this.rightKey.isDown) {
       // move right
       cam.scrollX += speed;
     }

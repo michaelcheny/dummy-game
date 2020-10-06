@@ -23,17 +23,24 @@ export default class Game extends Phaser.Scene {
     let self = this;
     this.cursors = this.input.keyboard.createCursorKeys();
 
-    this.archer = this.add
+    this.upKey = this.input.keyboard.addKey('w');
+    this.downKey = this.input.keyboard.addKey('s');
+    this.leftKey = this.input.keyboard.addKey('a');
+    this.rightKey = this.input.keyboard.addKey('d');
+
+    this.archer = this.physics.add
       .sprite(
         100,
         this.scale.height - 150,
         'archer',
         'src/assets/goblinArcher/GoblinArcher-Sheet_01.png'
       )
-      .setScale(0.3, 0.3);
+      .setScale(0.3, 0.3)
+      .setInteractive()
+      .setCollideWorldBounds(true);
 
     this.anims.create({
-      key: 'walk',
+      key: 'idle',
       repeat: -1,
       frameRate: 10,
       frames: this.anims.generateFrameNames('archer', {
@@ -45,7 +52,22 @@ export default class Game extends Phaser.Scene {
       }),
     });
 
-    this.archer.play('walk');
+    this.anims.create({
+      key: 'walk',
+      repeat: -1,
+      frameRate: 10,
+      frames: this.anims.generateFrameNames('archer', {
+        prefix: 'GoblinArcher-Sheet_',
+        suffix: '.png',
+        start: 22,
+        end: 27,
+        zeroPad: 2,
+      }),
+    });
+
+    // this.archer.setInteractive();
+
+    this.archer.play('idle');
 
     // this.clown = this.physics.add.
 
@@ -67,7 +89,7 @@ export default class Game extends Phaser.Scene {
 
     // this.physics.arcade.gravity.y = 100;
 
-    this.input.setDraggable(this.clown);
+    // this.input.setDraggable(this.clown);
     // this.input.setDraggable(this.flopper);
 
     this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
@@ -81,5 +103,26 @@ export default class Game extends Phaser.Scene {
     // if (this.cursors.left.isDown) this.clown.setVelocityX(-300);
     // if (this.cursors.right.isDown) this.clown.setVelocityX(300);
     // if (this.cursors.space.isDown) this.clown.setVelocityY(-1000);
+    // console.log(this.archer.height);
+    // this.archer.play('idle');
+    this.archer.setVelocity(0);
+    if (this.leftKey.isDown) {
+      this.archer.setVelocityX(-300);
+      this.archer.play('walk', true, 5);
+    }
+    // if (this.leftKey.isUp) {
+    //   this.archer.play('idle', true, 5);
+    // }
+    if (this.rightKey.isDown) {
+      this.archer.setVelocityX(300);
+      this.archer.play('walk', true, 5);
+    }
+    if (this.rightKey.isUp) {
+      this.archer.play('idle', true, 5);
+    }
+
+    if (this.upKey.isDown && this.archer.y > 900) this.archer.setVelocityY(-1000);
+    // if (this.downKey.isDown) this.archer.setVelocityY(1000);
+    if (this.downKey.isDown) console.log(this.archer);
   }
 }
