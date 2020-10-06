@@ -16,12 +16,17 @@ export default class Game extends Phaser.Scene {
   create() {
     let self = this;
 
-    // console.log(this);
+    // this.clown = this.physics.add.
 
-    this.clown = this.add
+    // console.log(this);
+    this.cursors = this.input.keyboard.createCursorKeys();
+
+    this.clown = this.physics.add
       .image(this.game.renderer.width * 0.66, this.game.renderer.height / 2, 'clown')
       .setScale(0.4, 0.7)
       .setInteractive();
+
+    this.clown.setGravityY(10000);
 
     this.flopper = this.add
       .image(this.game.renderer.width * 0.33, this.game.renderer.height / 2, 'andyFlop')
@@ -40,5 +45,11 @@ export default class Game extends Phaser.Scene {
     });
   }
 
-  update() {}
+  update() {
+    this.clown.setVelocity(0);
+
+    if (this.cursors.left.isDown) this.clown.setVelocityX(-300);
+    if (this.cursors.right.isDown) this.clown.setVelocityX(300);
+    if (this.cursors.space.isDown) this.clown.setVelocityY(-1000);
+  }
 }

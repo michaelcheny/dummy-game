@@ -28,7 +28,11 @@ export default class Title extends Phaser.Scene {
   create() {
     let self = this;
 
-    this.add.image(0, 0, 'layer0').setOrigin(0).setDepth(10).setScale(1.3, 1.3);
+    this.background = this.add
+      .image(0, 0, 'layer0')
+      .setOrigin(0)
+      .setDepth(10)
+      .setScale(1.3, 1.3);
     this.add.image(0, 0, 'layer1').setOrigin(0).setDepth(9).setScale(1.3, 1.3);
     this.add.image(0, 0, 'layer2').setOrigin(0).setDepth(8).setScale(1.3, 1.3);
     this.add.image(0, 0, 'layer3').setOrigin(0).setDepth(7).setScale(1.3, 1.3);
@@ -78,5 +82,7 @@ export default class Title extends Phaser.Scene {
     // });
   }
 
-  update() {}
+  update() {
+    this.background.x -= 0.1;
+  }
 }

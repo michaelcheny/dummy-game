@@ -8,6 +8,12 @@ const config = {
   // parent: 'phaser-example',
   width: 1200,
   height: 1020,
+  physics: {
+    default: 'arcade',
+    arcade: {
+      debug: false,
+    },
+  },
   scene: [Title, Game],
 };
 
