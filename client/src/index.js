@@ -6,11 +6,12 @@ import Title from './scenes/title';
 const config = {
   type: Phaser.AUTO,
   // parent: 'phaser-example',
-  width: 1200,
-  height: 1020,
+  width: 1250,
+  height: 1150,
   physics: {
     default: 'arcade',
     arcade: {
+      gravity: { y: 300 },
       debug: false,
     },
   },

@@ -5,11 +5,12 @@ export default class Game extends Phaser.Scene {
   constructor() {
     super({
       key: CONSTANTS.SCENES.PLAYING,
+      // active: true,
     });
   }
 
   preload() {
-    this.load.image('andyFlop', 'src/assets/andyFlop.png');
+    // this.load.image('andyFlop', 'src/assets/andyFlop.png');
     this.load.image('clown', 'src/assets/clown.png');
   }
 
@@ -22,22 +23,22 @@ export default class Game extends Phaser.Scene {
     this.cursors = this.input.keyboard.createCursorKeys();
 
     this.clown = this.physics.add
-      .image(this.game.renderer.width * 0.66, this.game.renderer.height / 2, 'clown')
+      .image(100, this.game.renderer.height - 200, 'clown')
       .setScale(0.4, 0.7)
       .setInteractive();
 
-    this.clown.setGravityY(10000);
+    // this.clown.setGravityY(10000);
 
-    this.flopper = this.add
-      .image(this.game.renderer.width * 0.33, this.game.renderer.height / 2, 'andyFlop')
-      .setInteractive();
+    // this.flopper = this.add
+    //   .image(this.game.renderer.width * 0.33, this.game.renderer.height / 2, 'andyFlop')
+    //   .setInteractive();
 
     // this.physics.startSystem(Phaser.Physics.ARCADE);
 
     // this.physics.arcade.gravity.y = 100;
 
     this.input.setDraggable(this.clown);
-    this.input.setDraggable(this.flopper);
+    // this.input.setDraggable(this.flopper);
 
     this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
       gameObject.x = dragX;
