@@ -6,8 +6,8 @@ import Title from './scenes/title';
 const config = {
   type: Phaser.AUTO,
   // parent: 'phaser-example',
-  width: 1250,
-  height: 1150,
+  width: 1400,
+  height: 1200,
   physics: {
     default: 'arcade',
     arcade: {

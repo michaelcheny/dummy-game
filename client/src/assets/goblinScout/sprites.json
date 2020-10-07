@@ -1,0 +1,175 @@
+{
+"frames": {
+	"goblinScout_attack_01.png": {
+		"frame": {"x":465, "y":145, "w":400, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"goblinScout_attack_02.png": {
+		"frame": {"x":401, "y":851, "w":400, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"goblinScout_attack_03.png": {
+		"frame": {"x":0, "y":145, "w":464, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":464,"h":448},
+		"sourceSize": {"w":464,"h":448}
+	},
+	"goblinScout_attack_04.png": {
+		"frame": {"x":401, "y":851, "w":400, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"goblinScout_attack_05.png": {
+		"frame": {"x":465, "y":145, "w":400, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"goblinScout_attack_06.png": {
+		"frame": {"x":465, "y":145, "w":400, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"goblinScout_die_01.png": {
+		"frame": {"x":802, "y":578, "w":384, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"goblinScout_die_02.png": {
+		"frame": {"x":1235, "y":0, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_die_03.png": {
+		"frame": {"x":1235, "y":0, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_die_04.png": {
+		"frame": {"x":0, "y":1220, "w":384, "h":400},
+		"spriteSourceSize": {"x":0,"y":48,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"goblinScout_die_05.png": {
+		"frame": {"x":0, "y":851, "w":400, "h":368},
+		"spriteSourceSize": {"x":0,"y":80,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"goblinScout_die_06.png": {
+		"frame": {"x":0, "y":578, "w":464, "h":272},
+		"spriteSourceSize": {"x":0,"y":176,"w":464,"h":448},
+		"sourceSize": {"w":464,"h":448}
+	},
+	"goblinScout_die_07.png": {
+		"frame": {"x":0, "y":0, "w":496, "h":144},
+		"spriteSourceSize": {"x":0,"y":304,"w":496,"h":448},
+		"sourceSize": {"w":496,"h":448}
+	},
+	"goblinScout_die_08.png": {
+		"frame": {"x":0, "y":0, "w":496, "h":144},
+		"spriteSourceSize": {"x":0,"y":304,"w":496,"h":448},
+		"sourceSize": {"w":496,"h":448}
+	},
+	"goblinScout_die_09.png": {
+		"frame": {"x":0, "y":0, "w":496, "h":144},
+		"spriteSourceSize": {"x":0,"y":304,"w":496,"h":448},
+		"sourceSize": {"w":496,"h":448}
+	},
+	"goblinScout_hurt_01.png": {
+		"frame": {"x":866, "y":0, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_hurt_02.png": {
+		"frame": {"x":1235, "y":0, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_hurt_03.png": {
+		"frame": {"x":1235, "y":0, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_hurt_04.png": {
+		"frame": {"x":866, "y":0, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_idle_01.png": {
+		"frame": {"x":802, "y":578, "w":384, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"goblinScout_idle_02.png": {
+		"frame": {"x":802, "y":578, "w":384, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"goblinScout_idle_03.png": {
+		"frame": {"x":866, "y":0, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_idle_04.png": {
+		"frame": {"x":866, "y":0, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_idle_05.png": {
+		"frame": {"x":802, "y":578, "w":384, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"goblinScout_idle_06.png": {
+		"frame": {"x":802, "y":578, "w":384, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"goblinScout_idle_07.png": {
+		"frame": {"x":465, "y":145, "w":400, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"goblinScout_idle_08.png": {
+		"frame": {"x":465, "y":145, "w":400, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"goblinScout_walk_01.png": {
+		"frame": {"x":802, "y":578, "w":384, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"goblinScout_walk_02.png": {
+		"frame": {"x":1187, "y":433, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_walk_03.png": {
+		"frame": {"x":1187, "y":866, "w":368, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":368,"h":448},
+		"sourceSize": {"w":368,"h":448}
+	},
+	"goblinScout_walk_04.png": {
+		"frame": {"x":802, "y":1027, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"goblinScout_walk_05.png": {
+		"frame": {"x":465, "y":145, "w":400, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"goblinScout_walk_06.png": {
+		"frame": {"x":802, "y":578, "w":384, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	}
+
+},
+"meta": {
+	"image": "sprites.png",
+	"size": {"w": 1604, "h": 1621},
+	"scale": "1"
+}
+}

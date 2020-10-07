@@ -1,0 +1,2120 @@
+{
+	"textures": [
+		{
+			"image": "minotaur.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 486,
+				"h": 554
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "minotaurSpriteSheet_58.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 43,
+						"w": 54,
+						"h": 22
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 54,
+						"h": 22
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_59.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 42,
+						"w": 54,
+						"h": 23
+					},
+					"frame": {
+						"x": 57,
+						"y": 1,
+						"w": 54,
+						"h": 23
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_60.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 42,
+						"w": 54,
+						"h": 23
+					},
+					"frame": {
+						"x": 113,
+						"y": 1,
+						"w": 54,
+						"h": 23
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_@v.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 42,
+						"w": 54,
+						"h": 23
+					},
+					"frame": {
+						"x": 169,
+						"y": 1,
+						"w": 54,
+						"h": 23
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_57.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 36,
+						"w": 54,
+						"h": 29
+					},
+					"frame": {
+						"x": 225,
+						"y": 1,
+						"w": 54,
+						"h": 29
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_33.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 16,
+						"w": 38,
+						"h": 49
+					},
+					"frame": {
+						"x": 281,
+						"y": 1,
+						"w": 38,
+						"h": 49
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_38.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 16,
+						"w": 38,
+						"h": 49
+					},
+					"frame": {
+						"x": 321,
+						"y": 1,
+						"w": 38,
+						"h": 49
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_93.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 16,
+						"w": 38,
+						"h": 49
+					},
+					"frame": {
+						"x": 361,
+						"y": 1,
+						"w": 38,
+						"h": 49
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_98.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 16,
+						"w": 38,
+						"h": 49
+					},
+					"frame": {
+						"x": 401,
+						"y": 1,
+						"w": 38,
+						"h": 49
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_34.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 14,
+						"w": 38,
+						"h": 51
+					},
+					"frame": {
+						"x": 441,
+						"y": 1,
+						"w": 38,
+						"h": 51
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_94.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 14,
+						"w": 38,
+						"h": 51
+					},
+					"frame": {
+						"x": 1,
+						"y": 54,
+						"w": 38,
+						"h": 51
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_56.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 53,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 28,
+						"w": 53,
+						"h": 37
+					},
+					"frame": {
+						"x": 41,
+						"y": 54,
+						"w": 53,
+						"h": 37
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_35.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 13,
+						"w": 38,
+						"h": 52
+					},
+					"frame": {
+						"x": 96,
+						"y": 54,
+						"w": 38,
+						"h": 52
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_37.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 13,
+						"w": 38,
+						"h": 52
+					},
+					"frame": {
+						"x": 136,
+						"y": 54,
+						"w": 38,
+						"h": 52
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_95.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 13,
+						"w": 38,
+						"h": 52
+					},
+					"frame": {
+						"x": 176,
+						"y": 54,
+						"w": 38,
+						"h": 52
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_97.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 13,
+						"w": 38,
+						"h": 52
+					},
+					"frame": {
+						"x": 216,
+						"y": 54,
+						"w": 38,
+						"h": 52
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_26.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 48,
+						"h": 43
+					},
+					"frame": {
+						"x": 256,
+						"y": 54,
+						"w": 48,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_43.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 48,
+						"h": 43
+					},
+					"frame": {
+						"x": 306,
+						"y": 54,
+						"w": 48,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_86.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 48,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 48,
+						"h": 43
+					},
+					"frame": {
+						"x": 356,
+						"y": 54,
+						"w": 48,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_36.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 10,
+						"w": 38,
+						"h": 55
+					},
+					"frame": {
+						"x": 406,
+						"y": 54,
+						"w": 38,
+						"h": 55
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_96.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 10,
+						"w": 38,
+						"h": 55
+					},
+					"frame": {
+						"x": 446,
+						"y": 54,
+						"w": 38,
+						"h": 55
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_14.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 24,
+						"w": 52,
+						"h": 41
+					},
+					"frame": {
+						"x": 1,
+						"y": 111,
+						"w": 52,
+						"h": 41
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_50.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 24,
+						"w": 52,
+						"h": 41
+					},
+					"frame": {
+						"x": 55,
+						"y": 111,
+						"w": 52,
+						"h": 41
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_53.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 24,
+						"w": 52,
+						"h": 41
+					},
+					"frame": {
+						"x": 109,
+						"y": 111,
+						"w": 52,
+						"h": 41
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_74.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 24,
+						"w": 52,
+						"h": 41
+					},
+					"frame": {
+						"x": 163,
+						"y": 111,
+						"w": 52,
+						"h": 41
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 217,
+						"y": 111,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 271,
+						"y": 111,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 325,
+						"y": 111,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_06.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 379,
+						"y": 111,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_07.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 20,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 433,
+						"y": 111,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_09.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 1,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_11.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 20,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 55,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_13.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 109,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_15.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 163,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_16.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 217,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_17.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 271,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_18.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 325,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_49.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 379,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_52.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 379,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_51.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 433,
+						"y": 155,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_54.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 1,
+						"y": 199,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_61.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 55,
+						"y": 199,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_64.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 109,
+						"y": 199,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_65.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 163,
+						"y": 199,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_66.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 217,
+						"y": 199,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_67.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 20,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 271,
+						"y": 199,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_69.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 325,
+						"y": 199,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_71.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 20,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 379,
+						"y": 199,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_73.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 433,
+						"y": 199,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_75.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 1,
+						"y": 243,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_76.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 55,
+						"y": 243,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_77.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 109,
+						"y": 243,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_78.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 52,
+						"h": 42
+					},
+					"frame": {
+						"x": 163,
+						"y": 243,
+						"w": 52,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_47.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 46,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 46,
+						"h": 48
+					},
+					"frame": {
+						"x": 217,
+						"y": 243,
+						"w": 46,
+						"h": 48
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_48.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 46,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 46,
+						"h": 48
+					},
+					"frame": {
+						"x": 265,
+						"y": 243,
+						"w": 46,
+						"h": 48
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 313,
+						"y": 243,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_28.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 313,
+						"y": 243,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 367,
+						"y": 243,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_08.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 21,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 421,
+						"y": 243,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_10.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 21,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 1,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_12.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 21,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 55,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_39.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 109,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_55.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 163,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_62.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 217,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_88.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 217,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_63.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 22,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 271,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_68.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 21,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 325,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_70.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 21,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 379,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_72.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 21,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 433,
+						"y": 293,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_99.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 52,
+						"h": 43
+					},
+					"frame": {
+						"x": 1,
+						"y": 338,
+						"w": 52,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_100.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 18,
+						"w": 54,
+						"h": 42
+					},
+					"frame": {
+						"x": 55,
+						"y": 338,
+						"w": 54,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_40.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 18,
+						"w": 54,
+						"h": 42
+					},
+					"frame": {
+						"x": 111,
+						"y": 338,
+						"w": 54,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_41.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 54,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 18,
+						"w": 54,
+						"h": 42
+					},
+					"frame": {
+						"x": 167,
+						"y": 338,
+						"w": 54,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_27.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 16,
+						"w": 52,
+						"h": 44
+					},
+					"frame": {
+						"x": 223,
+						"y": 338,
+						"w": 52,
+						"h": 44
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_87.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 16,
+						"w": 52,
+						"h": 44
+					},
+					"frame": {
+						"x": 277,
+						"y": 338,
+						"w": 52,
+						"h": 44
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_24.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 49,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 49,
+						"h": 48
+					},
+					"frame": {
+						"x": 331,
+						"y": 338,
+						"w": 49,
+						"h": 48
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_25.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 49,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 49,
+						"h": 48
+					},
+					"frame": {
+						"x": 382,
+						"y": 338,
+						"w": 49,
+						"h": 48
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_84.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 49,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 49,
+						"h": 48
+					},
+					"frame": {
+						"x": 433,
+						"y": 338,
+						"w": 49,
+						"h": 48
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_85.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 49,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 49,
+						"h": 48
+					},
+					"frame": {
+						"x": 1,
+						"y": 388,
+						"w": 49,
+						"h": 48
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_32.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 57,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 57,
+						"h": 42
+					},
+					"frame": {
+						"x": 52,
+						"y": 388,
+						"w": 57,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_92.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 57,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 57,
+						"h": 42
+					},
+					"frame": {
+						"x": 111,
+						"y": 388,
+						"w": 57,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_29.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 59,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 24,
+						"w": 59,
+						"h": 41
+					},
+					"frame": {
+						"x": 170,
+						"y": 388,
+						"w": 59,
+						"h": 41
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_89.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 59,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 24,
+						"w": 59,
+						"h": 41
+					},
+					"frame": {
+						"x": 231,
+						"y": 388,
+						"w": 59,
+						"h": 41
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_30.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 59,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 59,
+						"h": 42
+					},
+					"frame": {
+						"x": 292,
+						"y": 388,
+						"w": 59,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_31.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 59,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 59,
+						"h": 42
+					},
+					"frame": {
+						"x": 353,
+						"y": 388,
+						"w": 59,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_90.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 59,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 59,
+						"h": 42
+					},
+					"frame": {
+						"x": 414,
+						"y": 388,
+						"w": 59,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_91.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 59,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 23,
+						"w": 59,
+						"h": 42
+					},
+					"frame": {
+						"x": 1,
+						"y": 438,
+						"w": 59,
+						"h": 42
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_23.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 52,
+						"h": 48
+					},
+					"frame": {
+						"x": 62,
+						"y": 438,
+						"w": 52,
+						"h": 48
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_83.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 52,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 52,
+						"h": 48
+					},
+					"frame": {
+						"x": 116,
+						"y": 438,
+						"w": 52,
+						"h": 48
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_19.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 56,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 13,
+						"w": 56,
+						"h": 47
+					},
+					"frame": {
+						"x": 170,
+						"y": 438,
+						"w": 56,
+						"h": 47
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_79.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 56,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 13,
+						"w": 56,
+						"h": 47
+					},
+					"frame": {
+						"x": 228,
+						"y": 438,
+						"w": 56,
+						"h": 47
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_46.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 55,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 55,
+						"h": 48
+					},
+					"frame": {
+						"x": 286,
+						"y": 438,
+						"w": 55,
+						"h": 48
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_42.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 62,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 17,
+						"w": 62,
+						"h": 43
+					},
+					"frame": {
+						"x": 343,
+						"y": 438,
+						"w": 62,
+						"h": 43
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_45.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 68,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 18,
+						"w": 68,
+						"h": 47
+					},
+					"frame": {
+						"x": 407,
+						"y": 438,
+						"w": 68,
+						"h": 47
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_22.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 57,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 3,
+						"w": 57,
+						"h": 62
+					},
+					"frame": {
+						"x": 1,
+						"y": 488,
+						"w": 57,
+						"h": 62
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_82.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 57,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 3,
+						"w": 57,
+						"h": 62
+					},
+					"frame": {
+						"x": 60,
+						"y": 488,
+						"w": 57,
+						"h": 62
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_21.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 65,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 65,
+						"h": 65
+					},
+					"frame": {
+						"x": 119,
+						"y": 488,
+						"w": 65,
+						"h": 65
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_81.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 65,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 65,
+						"h": 65
+					},
+					"frame": {
+						"x": 186,
+						"y": 488,
+						"w": 65,
+						"h": 65
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_20.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 69,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 69,
+						"h": 65
+					},
+					"frame": {
+						"x": 253,
+						"y": 488,
+						"w": 69,
+						"h": 65
+					}
+				},
+				{
+					"filename": "minotaurSpriteSheet_80.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 69,
+						"h": 65
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 69,
+						"h": 65
+					},
+					"frame": {
+						"x": 324,
+						"y": 488,
+						"w": 69,
+						"h": 65
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:b618ecea6e8aafc789e27608161e1d66:99a9bbffe7d567b523cc1aff0915d62e:8990a5d387bbc6f4125ab92257e6df09$"
+	}
+}
