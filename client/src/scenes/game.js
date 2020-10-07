@@ -125,9 +125,11 @@ export default class Game extends Phaser.Scene {
     if (this.keyboard.D.isDown) {
       this.scout.play('walk', true);
       this.scout.setVelocityX(200);
+      this.scout.flipX = false;
     }
     if (this.keyboard.A.isDown) {
-      this.scout.anims.playReverse('walk', true);
+      this.scout.flipX = true;
+      this.scout.play('walk', true);
       this.scout.setVelocityX(-200);
     }
     if (this.keyboard.A.isUp && this.keyboard.D.isUp) {
