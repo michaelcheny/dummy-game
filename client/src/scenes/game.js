@@ -38,133 +38,20 @@ export default class Game extends Phaser.Scene {
     this.leftKey = this.input.keyboard.addKey('a');
     this.rightKey = this.input.keyboard.addKey('d');
 
-    this.scout = this.add
+    this.keyboard = this.input.keyboard.addKeys('W,A,S,D, SPACE');
+
+    this.scout = this.physics.add
       .sprite(150, this.scale.height - 150, 'scout')
       .setScale(0.3, 0.3)
-      .setInteractive();
-    // .setCollideWorldBounds(true);
+      .setInteractive()
+      .setCollideWorldBounds(true);
 
     this.makeAnimations();
-    console.log(this.textures.get('scout').getFrameNames());
+    // console.log(this.textures.get('scout').getFrameNames());
 
     this.scout.play('idle');
-    // this.minotaur = this.add
-    //   .sprite(
-    //     150,
-    //     this.scale.height - 150,
-    //     'minotaur',
-    //     'src/assets/minotaur/Minotaur - Sprite Sheet_01.png'
-    //   )
-    //   .setScale(3, 3)
-    //   .setInteractive()
-    //   .setCollideWorldBounds(true);
 
-    // this.anims.create({
-    //   key: 'walk',
-    //   repeat: -1,
-    //   frameRate: 10,
-    //   frames: this.anims.generateFrameNames('minotaur', {
-    //     prefix: 'Minotaur - Sprite Sheet_',
-    //     suffix: '.png',
-    //     start: 6,
-    //     end: 13,
-    //     zeroPad: 2,
-    //   }),
-    // });
-
-    // this.minotaur.play('idle');
-
-    // this.archer = this.physics.add
-    //   .sprite(
-    //     100,
-    //     this.scale.height - 150,
-    //     'archer',
-    //     'src/assets/goblinArcher/GoblinArcher-Sheet_01.png'
-    //   )
-    //   .setScale(0.3, 0.3)
-    //   .setInteractive()
-    //   .setCollideWorldBounds(true);
-
-    // this.anims.create({
-    //   key: 'idle',
-    //   repeat: -1,
-    //   frameRate: 10,
-    //   frames: this.anims.generateFrameNames('archer', {
-    //     prefix: 'GoblinArcher-Sheet_',
-    //     suffix: '.png',
-    //     start: 1,
-    //     end: 8,
-    //     zeroPad: 2,
-    //   }),
-    // });
-
-    // this.anims.create({
-    //   key: 'walk',
-    //   repeat: -1,
-    //   frameRate: 10,
-    //   frames: this.anims.generateFrameNames('archer', {
-    //     prefix: 'GoblinArcher-Sheet_',
-    //     suffix: '.png',
-    //     start: 22,
-    //     end: 27,
-    //     zeroPad: 2,
-    //   }),
-    // });
-
-    // this.anims.create({
-    //   key: 'receive damage',
-    //   repeat: -1,
-    //   frameRate: 10,
-    //   frames: this.anims.generateFrameNames('archer', {
-    //     prefix: 'GoblinArcher-Sheet_',
-    //     suffix: '.png',
-    //     start: 18,
-    //     end: 21,
-    //     zeroPad: 2,
-    //   }),
-    // });
-    // this.anims.create({
-    //   key: 'die',
-    //   repeat: 10,
-    //   frameRate: 10,
-    //   frames: this.anims.generateFrameNames('archer', {
-    //     prefix: 'GoblinArcher-Sheet_',
-    //     suffix: '.png',
-    //     start: 27,
-    //     end: 36,
-    //     zeroPad: 2,
-    //   }),
-    // });
-
-    // this.archer.play('idle');
-
-    // this.clown = this.physics.add.
-
-    // console.log(this);
-
-    // this.clown = this.physics.add
-    //   .sprite(100, this.game.renderer.height - 200, 'clown')
-    //   .setScale(0.4, 0.7)
-    //   .setInteractive()
-    //   .setCollideWorldBounds(true);
-
-    // this.clown.setGravityY(10000);
-
-    // this.flopper = this.add
-    //   .image(this.game.renderer.width * 0.33, this.game.renderer.height / 2, 'andyFlop')
-    //   .setInteractive();
-
-    // this.physics.startSystem(Phaser.Physics.ARCADE);
-
-    // this.physics.arcade.gravity.y = 100;
-
-    // this.input.setDraggable(this.clown);
-    // this.input.setDraggable(this.flopper);
-
-    // this.input.on('drag', function (pointer, gameObject, dragX, dragY) {
-    //   gameObject.x = dragX;
-    //   gameObject.y = dragY;
-    // });
+    window.scout = this.scout;
   }
 
   makeAnimations() {
@@ -185,7 +72,7 @@ export default class Game extends Phaser.Scene {
     // attack
     this.anims.create({
       key: 'attack',
-      repeat: -1,
+      repeat: 1,
       frameRate: 7,
       frames: this.anims.generateFrameNames('scout', {
         start: 1,
@@ -239,7 +126,25 @@ export default class Game extends Phaser.Scene {
     });
   }
 
-  update() {
+  update(time, delta) {
+    // this.scout.setVelocity(0);
+    if (this.keyboard.D.isDown) {
+      this.scout.play('walk', true);
+      this.scout.setVelocityX(200);
+    }
+    if (this.keyboard.A.isDown) {
+      this.scout.anims.playReverse('walk', true);
+      this.scout.setVelocityX(-200);
+    }
+    if (this.keyboard.A.isUp && this.keyboard.D.isUp) {
+      // not moving on X
+      this.scout.setVelocityX(0);
+    }
+    if (this.keyboard.SPACE.isDown) {
+      this.scout.play('attack', true);
+    }
+
+    // this.scout.play('idle');
     // this.clown.setVelocity(0);
     // if (this.cursors.left.isDown) this.clown.setVelocityX(-300);
     // if (this.cursors.right.isDown) this.clown.setVelocityX(300);
