@@ -31,12 +31,6 @@ export default class Game extends Phaser.Scene {
 
   create() {
     // let self = this;
-    this.cursors = this.input.keyboard.createCursorKeys();
-
-    this.upKey = this.input.keyboard.addKey('w');
-    this.downKey = this.input.keyboard.addKey('s');
-    this.leftKey = this.input.keyboard.addKey('a');
-    this.rightKey = this.input.keyboard.addKey('d');
 
     this.keyboard = this.input.keyboard.addKeys('W,A,S,D, SPACE');
 
@@ -86,7 +80,7 @@ export default class Game extends Phaser.Scene {
     // walk
     this.anims.create({
       key: 'walk',
-      repeat: -1,
+      repeat: 1,
       frameRate: 7,
       frames: this.anims.generateFrameNames('scout', {
         start: 1,
@@ -114,7 +108,7 @@ export default class Game extends Phaser.Scene {
     // die
     this.anims.create({
       key: 'die',
-      repeat: -1,
+      repeat: 0,
       frameRate: 7,
       frames: this.anims.generateFrameNames('scout', {
         start: 1,
@@ -142,6 +136,11 @@ export default class Game extends Phaser.Scene {
     }
     if (this.keyboard.SPACE.isDown) {
       this.scout.play('attack', true);
+    }
+
+    if (this.keyboard.S.isDown) {
+      this.scout.play('die', true);
+      this.scout.setVelocityX(0);
     }
 
     // this.scout.play('idle');
