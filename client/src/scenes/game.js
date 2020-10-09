@@ -41,10 +41,20 @@ export default class Game extends Phaser.Scene {
       .setCollideWorldBounds(true);
 
     this.makeAnimations();
-    // console.log(this.textures.get('scout').getFrameNames());
+
+    this.input.on('pointermove', (pointer) => {
+      console.log(pointer.x, pointer.y);
+    });
 
     this.scout.play('idle');
     this.minotaur.play('mIdle');
+
+    this.input;
+
+    this.physics.world.addCollider(this.minotaur, this.scout, (minotaur, scout) => {
+      minotaur.destroy();
+      scout.destroy();
+    });
 
     window.scout = this.scout;
     window.minotaur = this.minotaur;
@@ -157,17 +167,30 @@ export default class Game extends Phaser.Scene {
     // this.scout.setVelocity(0);
 
     if (
-      !this.keyboard.W.isDown &&
-      !this.keyboard.A.isDown &&
-      !this.keyboard.S.isDown &&
-      !this.keyboard.D.isDown &&
-      !this.keyboard.SPACE.isDown
-    ) {
-      this.minotaur.play('mIdle', true);
-      this.scout.play('idle', true);
-      this.scout.setVelocityX(0);
-      this.minotaur.setVelocityX(0);
-    }
+      this.input.on('pointermove', (pointer) => {
+        if (pointer.x > this.minotaur.x) {
+          this.minotaur.flipX = false;
+        } else {
+          this.minotaur.flipX = true;
+        }
+
+        if (pointer.isDown) {
+          this.minotaur.play('mAttack4', true);
+        }
+      })
+    )
+      if (
+        !this.keyboard.W.isDown &&
+        !this.keyboard.A.isDown &&
+        !this.keyboard.S.isDown &&
+        !this.keyboard.D.isDown &&
+        !this.keyboard.SPACE.isDown
+      ) {
+        this.minotaur.play('mIdle', true);
+        this.scout.play('idle', true);
+        this.scout.setVelocityX(0);
+        this.minotaur.setVelocityX(0);
+      }
     // if (this.keyboard.SPACE.isDown) {
     //   this.scout.play('attack', true);
     //   this.minotaur.play('mAttack1', true);
@@ -179,20 +202,21 @@ export default class Game extends Phaser.Scene {
       this.scout.flipX = false;
       this.minotaur.play('move', true);
       this.minotaur.setVelocityX(200);
-      this.minotaur.flipX = false;
+      // this.minotaur.flipX = false;
     } else if (this.keyboard.A.isDown) {
       this.scout.flipX = true;
       this.scout.play('walk', true);
       this.scout.setVelocityX(-200);
 
       // this.minotaur.play('mAttack4', true);
-      this.minotaur.flipX = true;
+      // this.minotaur.flipX = true;
       this.minotaur.play('move', true);
       this.minotaur.setVelocityX(-200);
     } else if (this.keyboard.SPACE.isDown) {
       this.scout.play('attack', true);
-      this.minotaur.play('mAttack1', true);
+      // this.minotaur.play('mAttack1', true);
     }
+
     // else {
     //   this.minotaur.play('mIdle', true);
     //   this.scout.play('idle', true);
