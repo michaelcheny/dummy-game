@@ -12,7 +12,7 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: { y: 8000 },
-      debug: false,
+      debug: true,
     },
   },
   scene: [Title, Game],

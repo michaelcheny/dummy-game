@@ -6,15 +6,17 @@ export default class Game extends Phaser.Scene {
     super({
       key: CONSTANTS.SCENES.PLAYING,
       // active: true,
+      // debug: true
     });
   }
 
   preload() {
-    this.load.atlas(
-      'scout',
-      'src/assets/goblinScout/sprites.png',
-      'src/assets/goblinScout/sprites.json'
-    );
+    // this.load.atlas(
+    //   'scout',
+    //   'src/assets/goblinScout/sprites.png',
+    //   'src/assets/goblinScout/sprites.json'
+    // );
+    this.load.image('arrow', 'src/assets/goblinArcher/Arrow.png');
 
     this.load.spritesheet('minotaur', 'src/assets/minotaur_spritesheet.png', {
       frameWidth: 95.5,
@@ -44,11 +46,11 @@ export default class Game extends Phaser.Scene {
       .setInteractive()
       .setCollideWorldBounds(true);
 
-    this.scout = this.physics.add
-      .sprite(150, this.scale.height - 150, 'scout')
-      .setScale(0.3, 0.3)
-      .setInteractive()
-      .setCollideWorldBounds(true);
+    // this.scout = this.physics.add
+    //   .sprite(150, this.scale.height - 150, 'scout')
+    //   .setScale(0.3, 0.3)
+    //   .setInteractive()
+    //   .setCollideWorldBounds(true);
 
     this.minotaur = this.physics.add
       .sprite(800, this.scale.height - 150, 'minotaur')
@@ -59,35 +61,90 @@ export default class Game extends Phaser.Scene {
 
     this.makeAnimations();
 
+    if (this.input.activePointer.isDown) {
+      this.arrow = this.add.sprite(
+        this.input.activePointer.x,
+        this.input.activePointer.y,
+        'arrow',
+        'src/assets/goblinArcher/Arrow.png'
+      );
+    }
+
     this.input.on('pointermove', (pointer) => {
       console.log(pointer.x, pointer.y);
     });
 
-    this.scout.play('idle');
+    // if (pointer.isDown) {
+    //   this.arrow = this.add.sprite(
+    //     pointer.x,
+    //     pointer.y,
+    //     'arrow',
+    //     'src/assets/goblinArcher/Arrow.png'
+    //   );
+
+    // }
+
+    // this.scout.play('idle');
     this.minotaur.play('mIdle');
     this.archer.play('archerIdle');
 
-    this.input;
+    // this.input;
 
-    this.physics.world.addCollider(this.minotaur, this.scout, (minotaur, scout) => {
+    this.physics.world.addCollider(this.minotaur, this.arrow, (minotaur, arrow) => {
       minotaur.destroy();
-      scout.destroy();
+      arrow.destroy();
     });
 
-    window.scout = this.scout;
+    window.archer = this.archer;
     window.minotaur = this.minotaur;
   }
 
   update(time, delta) {
     // this.scout.setVelocity(0)
 
+    let mousedownID = -1; //Global ID of mouse down interval
+
+    // function mouseup(event) {
+    //   if (mousedownID != -1) {
+    //     //Only stop if exists
+    //     clearInterval(mousedownID);
+    //     mousedownID = -1;
+    //   }
+    // }
     if (this.input.activePointer.isDown) {
       this.archer.play('archerAttack', true);
       this.minotaur.play('mAttack4', true);
+      ////////////////
+
+      // if (mousedownID == -1) {
+      //   mousedownID =
+      // }
+      setInterval(whilemousedown, 200 /*execute every 100ms*/);
+      //Prevent multimple loops!
+
+      const whilemousedown = () => {
+        /*here put your code*/
+        this.arrow = this.physics.add
+          .sprite(
+            // this.input.activePointer.x,
+            // this.input.activePointer.y,
+            this.archer.x + 100,
+            this.archer.y,
+            'arrow',
+            'src/assets/goblinArcher/Arrow.png'
+          )
+          .setScale(0.15, 0.15)
+          .setVelocityX(1500);
+        // .setVelocityY(-100);
+        // .setGravity(0, 0);
+        console.log('shot');
+        this.arrow.body.allowGravity = false;
+      };
+      //////////////////////
     } else if (this.keyboard.D.isDown) {
-      this.scout.play('walk', true);
-      this.scout.setVelocityX(200);
-      this.scout.flipX = false;
+      // this.scout.play('walk', true);
+      // this.scout.setVelocityX(200);
+      // this.scout.flipX = false;
 
       this.minotaur.play('move', true);
       this.minotaur.setVelocityX(200);
@@ -96,17 +153,18 @@ export default class Game extends Phaser.Scene {
       this.archer.play('archerWalk', true);
       this.archer.setVelocityX(200);
     } else if (this.keyboard.A.isDown) {
-      this.scout.flipX = true;
-      this.scout.play('walk', true);
-      this.scout.setVelocityX(-200);
+      // this.scout.flipX = true;
+      // this.scout.play('walk', true);
+      // this.scout.setVelocityX(-200);
 
       this.minotaur.play('move', true);
       this.minotaur.setVelocityX(-200);
 
       this.archer.play('archerWalk', true);
       this.archer.setVelocityX(-200);
-    } else if (this.keyboard.SPACE.isDown) {
-      this.scout.play('attack', true);
+    }
+    if (this.keyboard.SPACE.isDown) {
+      // this.scout.play('attack', true);
       // this.minotaur.play('mAttack1', true);
     }
     if (
@@ -137,9 +195,9 @@ export default class Game extends Phaser.Scene {
         !this.input.activePointer.isDown
       ) {
         this.minotaur.play('mIdle', true);
-        this.scout.play('idle', true);
-        this.scout.setVelocityX(0);
         this.minotaur.setVelocityX(0);
+        // this.scout.play('idle', true);
+        // this.scout.setVelocityX(0);
 
         this.archer.play('archerIdle', true);
         this.archer.setVelocityX(0);
@@ -160,10 +218,10 @@ export default class Game extends Phaser.Scene {
     //   this.minotaur.setVelocityX(0);
     // }
 
-    if (this.keyboard.S.isDown) {
-      this.scout.play('die', true);
-      this.scout.setVelocityX(0);
-    }
+    // if (this.keyboard.S.isDown) {
+    //   this.scout.play('die', true);
+    //   this.scout.setVelocityX(0);
+    // }
 
     // this.scout.play('idle');
     // this.clown.setVelocity(0);
