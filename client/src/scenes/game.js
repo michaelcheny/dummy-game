@@ -16,17 +16,10 @@ export default class Game extends Phaser.Scene {
       'src/assets/goblinScout/sprites.json'
     );
 
-    // this.load.atlas(
-    //   'minotaur',
-    //   'src/assets/minotaur/sprites.png',
-    //   'src/assets/minotaur/sprites.json'
-    // );
-    // this.load.atlas(
-    //   'archer',
-    //   'src/assets/goblinArcher/goblinArcherSprites.png',
-    //   'src/assets/goblinArcher/goblinArcherSprites.json'
-    // );
-    // this.load.image('clown', 'src/assets/clown.png');
+    this.load.spritesheet('minotaur', 'src/assets/minotaur_spritesheet.png', {
+      frameWidth: 95.5,
+      frameHeight: 96,
+    });
   }
 
   create() {
@@ -40,15 +33,25 @@ export default class Game extends Phaser.Scene {
       .setInteractive()
       .setCollideWorldBounds(true);
 
+    this.minotaur = this.physics.add
+      .sprite(800, this.scale.height - 150, 'minotaur')
+      .setScale(2, 2)
+      .setOrigin(0, 1)
+      .setInteractive()
+      .setCollideWorldBounds(true);
+
     this.makeAnimations();
     // console.log(this.textures.get('scout').getFrameNames());
 
     this.scout.play('idle');
+    this.minotaur.play('mIdle');
 
     window.scout = this.scout;
+    window.minotaur = this.minotaur;
   }
 
   makeAnimations() {
+    // FOR GOBLIN
     // idle
     this.anims.create({
       key: 'idle',
@@ -118,27 +121,88 @@ export default class Game extends Phaser.Scene {
         suffix: '.png',
       }),
     });
+
+    // FOIR MINOTAIRUR
+    // idle
+    this.anims.create({
+      key: 'mIdle',
+      frames: this.anims.generateFrameNumbers('minotaur', { start: 0, end: 4 }),
+      frameRate: 8,
+      repeat: -1,
+    });
+    // move
+    this.anims.create({
+      key: 'move',
+      frames: this.anims.generateFrameNumbers('minotaur', { start: 1, end: 4 }),
+      frameRate: 8,
+      // repeat: 1,
+    });
+    // attack
+    this.anims.create({
+      key: 'mAttack1',
+      frames: this.anims.generateFrameNumbers('minotaur', { start: 30, end: 38 }),
+      frameRate: 8,
+      // repeat: 1,
+    });
+    // spin attack
+    this.anims.create({
+      key: 'mAttack4',
+      frames: this.anims.generateFrameNumbers('minotaur', { start: 60, end: 68 }),
+      frameRate: 8,
+      // repeat: 1,
+    });
   }
 
   update(time, delta) {
     // this.scout.setVelocity(0);
+
+    if (
+      !this.keyboard.W.isDown &&
+      !this.keyboard.A.isDown &&
+      !this.keyboard.S.isDown &&
+      !this.keyboard.D.isDown &&
+      !this.keyboard.SPACE.isDown
+    ) {
+      this.minotaur.play('mIdle', true);
+      this.scout.play('idle', true);
+      this.scout.setVelocityX(0);
+      this.minotaur.setVelocityX(0);
+    }
+    // if (this.keyboard.SPACE.isDown) {
+    //   this.scout.play('attack', true);
+    //   this.minotaur.play('mAttack1', true);
+    // }
+
     if (this.keyboard.D.isDown) {
       this.scout.play('walk', true);
       this.scout.setVelocityX(200);
       this.scout.flipX = false;
-    }
-    if (this.keyboard.A.isDown) {
+      this.minotaur.play('move', true);
+      this.minotaur.setVelocityX(200);
+      this.minotaur.flipX = false;
+    } else if (this.keyboard.A.isDown) {
       this.scout.flipX = true;
       this.scout.play('walk', true);
       this.scout.setVelocityX(-200);
-    }
-    if (this.keyboard.A.isUp && this.keyboard.D.isUp) {
-      // not moving on X
-      this.scout.setVelocityX(0);
-    }
-    if (this.keyboard.SPACE.isDown) {
+
+      // this.minotaur.play('mAttack4', true);
+      this.minotaur.flipX = true;
+      this.minotaur.play('move', true);
+      this.minotaur.setVelocityX(-200);
+    } else if (this.keyboard.SPACE.isDown) {
       this.scout.play('attack', true);
+      this.minotaur.play('mAttack1', true);
     }
+    // else {
+    //   this.minotaur.play('mIdle', true);
+    //   this.scout.play('idle', true);
+    // }
+
+    // if (this.keyboard.A.isUp && this.keyboard.D.isUp) {
+    //   // not moving on X
+    //   this.scout.setVelocityX(0);
+    //   this.minotaur.setVelocityX(0);
+    // }
 
     if (this.keyboard.S.isDown) {
       this.scout.play('die', true);
