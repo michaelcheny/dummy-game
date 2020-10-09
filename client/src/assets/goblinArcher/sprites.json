@@ -1,0 +1,185 @@
+{
+"frames": {
+	"GoblinArcher-Sheet_attack_01.png": {
+		"frame": {"x":417, "y":1284, "w":416, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":416,"h":448},
+		"sourceSize": {"w":416,"h":448}
+	},
+	"GoblinArcher-Sheet_attack_02.png": {
+		"frame": {"x":449, "y":418, "w":416, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":416,"h":448},
+		"sourceSize": {"w":416,"h":448}
+	},
+	"GoblinArcher-Sheet_attack_03.png": {
+		"frame": {"x":449, "y":418, "w":416, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":416,"h":448},
+		"sourceSize": {"w":416,"h":448}
+	},
+	"GoblinArcher-Sheet_attack_04.png": {
+		"frame": {"x":449, "y":851, "w":416, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":416,"h":448},
+		"sourceSize": {"w":416,"h":448}
+	},
+	"GoblinArcher-Sheet_attack_05.png": {
+		"frame": {"x":0, "y":418, "w":448, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":448,"h":448},
+		"sourceSize": {"w":448,"h":448}
+	},
+	"GoblinArcher-Sheet_attack_06.png": {
+		"frame": {"x":0, "y":1284, "w":416, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":416,"h":448},
+		"sourceSize": {"w":416,"h":448}
+	},
+	"GoblinArcher-Sheet_attack_08.png": {
+		"frame": {"x":0, "y":851, "w":448, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":448,"h":448},
+		"sourceSize": {"w":448,"h":448}
+	},
+	"GoblinArcher-Sheet_attack_09.png": {
+		"frame": {"x":417, "y":1284, "w":416, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":416,"h":448},
+		"sourceSize": {"w":416,"h":448}
+	},
+	"GoblinArcher-Sheet_die_01.png": {
+		"frame": {"x":834, "y":1284, "w":400, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"GoblinArcher-Sheet_die_02.png": {
+		"frame": {"x":1251, "y":433, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_die_03.png": {
+		"frame": {"x":1251, "y":433, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_die_04.png": {
+		"frame": {"x":497, "y":0, "w":400, "h":400},
+		"spriteSourceSize": {"x":0,"y":48,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"GoblinArcher-Sheet_die_05.png": {
+		"frame": {"x":0, "y":145, "w":464, "h":272},
+		"spriteSourceSize": {"x":0,"y":176,"w":464,"h":448},
+		"sourceSize": {"w":464,"h":448}
+	},
+	"GoblinArcher-Sheet_die_07.png": {
+		"frame": {"x":0, "y":0, "w":496, "h":144},
+		"spriteSourceSize": {"x":0,"y":304,"w":496,"h":448},
+		"sourceSize": {"w":496,"h":448}
+	},
+	"GoblinArcher-Sheet_die_08.png": {
+		"frame": {"x":0, "y":0, "w":496, "h":144},
+		"spriteSourceSize": {"x":0,"y":304,"w":496,"h":448},
+		"sourceSize": {"w":496,"h":448}
+	},
+	"GoblinArcher-Sheet_die_09.png": {
+		"frame": {"x":0, "y":0, "w":496, "h":144},
+		"spriteSourceSize": {"x":0,"y":304,"w":496,"h":448},
+		"sourceSize": {"w":496,"h":448}
+	},
+	"GoblinArcher-Sheet_hurt_01.png": {
+		"frame": {"x":866, "y":834, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_hurt_02.png": {
+		"frame": {"x":1251, "y":433, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_hurt_03.png": {
+		"frame": {"x":1251, "y":433, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_hurt_04.png": {
+		"frame": {"x":866, "y":834, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_idle_01.png": {
+		"frame": {"x":834, "y":1284, "w":400, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"GoblinArcher-Sheet_idle_02.png": {
+		"frame": {"x":834, "y":1284, "w":400, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"GoblinArcher-Sheet_idle_03.png": {
+		"frame": {"x":866, "y":834, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_idle_04.png": {
+		"frame": {"x":866, "y":834, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_idle_05.png": {
+		"frame": {"x":834, "y":1284, "w":400, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"GoblinArcher-Sheet_idle_06.png": {
+		"frame": {"x":834, "y":1284, "w":400, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"GoblinArcher-Sheet_idle_07.png": {
+		"frame": {"x":417, "y":1284, "w":416, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":416,"h":448},
+		"sourceSize": {"w":416,"h":448}
+	},
+	"GoblinArcher-Sheet_idle_08.png": {
+		"frame": {"x":417, "y":1284, "w":416, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":416,"h":448},
+		"sourceSize": {"w":416,"h":448}
+	},
+	"GoblinArcher-Sheet_sttack_07.png": {
+		"frame": {"x":0, "y":851, "w":448, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":448,"h":448},
+		"sourceSize": {"w":448,"h":448}
+	},
+	"GoblinArcher-Sheet_walk_01.png": {
+		"frame": {"x":834, "y":1284, "w":400, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	},
+	"GoblinArcher-Sheet_walk_02.png": {
+		"frame": {"x":866, "y":401, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_walk_03.png": {
+		"frame": {"x":1251, "y":0, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_walk_04.png": {
+		"frame": {"x":1235, "y":1267, "w":384, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":384,"h":448},
+		"sourceSize": {"w":384,"h":448}
+	},
+	"GoblinArcher-Sheet_walk_05.png": {
+		"frame": {"x":417, "y":1284, "w":416, "h":432},
+		"spriteSourceSize": {"x":0,"y":16,"w":416,"h":448},
+		"sourceSize": {"w":416,"h":448}
+	},
+	"GoblinArcher-Sheet_walk_06.png": {
+		"frame": {"x":834, "y":1284, "w":400, "h":448},
+		"spriteSourceSize": {"x":0,"y":0,"w":400,"h":448},
+		"sourceSize": {"w":400,"h":448}
+	}
+
+},
+"meta": {
+	"image": "sprites.png",
+	"size": {"w": 1636, "h": 1733},
+	"scale": "1"
+}
+}
