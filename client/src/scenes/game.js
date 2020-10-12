@@ -61,14 +61,14 @@ export default class Game extends Phaser.Scene {
 
     this.makeAnimations();
 
-    if (this.input.activePointer.isDown) {
-      this.arrow = this.add.sprite(
-        this.input.activePointer.x,
-        this.input.activePointer.y,
-        'arrow',
-        'src/assets/goblinArcher/Arrow.png'
-      );
-    }
+    // if (this.input.activePointer.isDown) {
+    //   this.arrow = this.add.sprite(
+    //     this.input.activePointer.x,
+    //     this.input.activePointer.y,
+    //     'arrow',
+    //     'src/assets/goblinArcher/Arrow.png'
+    //   );
+    // }
 
     this.input.on('pointermove', (pointer) => {
       console.log(pointer.x, pointer.y);
@@ -196,65 +196,10 @@ export default class Game extends Phaser.Scene {
       ) {
         this.minotaur.play('mIdle', true);
         this.minotaur.setVelocityX(0);
-        // this.scout.play('idle', true);
-        // this.scout.setVelocityX(0);
-
         this.archer.play('archerIdle', true);
         this.archer.setVelocityX(0);
       }
-    // if (this.keyboard.SPACE.isDown) {
-    //   this.scout.play('attack', true);
-    //   this.minotaur.play('mAttack1', true);
-    // }
-
-    // else {
-    //   this.minotaur.play('mIdle', true);
-    //   this.scout.play('idle', true);
-    // }
-
-    // if (this.keyboard.A.isUp && this.keyboard.D.isUp) {
-    //   // not moving on X
-    //   this.scout.setVelocityX(0);
-    //   this.minotaur.setVelocityX(0);
-    // }
-
-    // if (this.keyboard.S.isDown) {
-    //   this.scout.play('die', true);
-    //   this.scout.setVelocityX(0);
-    // }
-
-    // this.scout.play('idle');
-    // this.clown.setVelocity(0);
-    // if (this.cursors.left.isDown) this.clown.setVelocityX(-300);
-    // if (this.cursors.right.isDown) this.clown.setVelocityX(300);
-    // if (this.cursors.space.isDown) this.clown.setVelocityY(-1000);
-    // console.log(this.archer.height);
-    // this.archer.play('idle');
-    // this.archer.setVelocity(0);
-    // if (this.leftKey.isDown) {
-    //   this.archer.setVelocityX(-300);
-    //   this.archer.play('walk', true, 5);
-    // }
-    // // if (this.leftKey.isUp) {
-    // //   this.archer.play('idle', true, 5);
-    // // }
-    // if (this.rightKey.isDown) {
-    //   this.archer.setVelocityX(300);
-    //   this.archer.play('walk', true, 5);
-    // this.minotaur.play('walk', true, 10);
-    // }
-    // if (this.rightKey.isUp) {
-    //   this.archer.play('idle', true, 5);
-    // }
-    // if (this.upKey.isDown && this.archer.y > 900) this.archer.setVelocityY(-1000);
-    // // if (this.downKey.isDown) this.archer.setVelocityY(1000);
-    // if (this.downKey.isDown) console.log(this.archer);
-    // if (this.cursors.up.isDown) {
-    //   this.archer.play('receive damage', true, 10);
-    // }
-    // if (this.cursors.down.isDown) {
-    //   this.archer.play('die');
-    // }
+  
   }
   makeAnimations() {
     // FOR GOBLIN
