@@ -119,10 +119,10 @@ export default class Game extends Phaser.Scene {
       // if (mousedownID == -1) {
       //   mousedownID =
       // }
-      setInterval(whilemousedown, 200 /*execute every 100ms*/);
+      // setInterval(whilemousedown, 200 /*execute every 100ms*/);
       //Prevent multimple loops!
 
-      const whilemousedown = () => {
+      // const whilemousedown = () => {
         /*here put your code*/
         this.arrow = this.physics.add
           .sprite(
@@ -139,7 +139,7 @@ export default class Game extends Phaser.Scene {
         // .setGravity(0, 0);
         console.log('shot');
         this.arrow.body.allowGravity = false;
-      };
+      // };
       //////////////////////
     } else if (this.keyboard.D.isDown) {
       // this.scout.play('walk', true);
@@ -163,10 +163,10 @@ export default class Game extends Phaser.Scene {
       this.archer.play('archerWalk', true);
       this.archer.setVelocityX(-200);
     }
-    if (this.keyboard.SPACE.isDown) {
+    // if (this.keyboard.SPACE.isDown) {
       // this.scout.play('attack', true);
       // this.minotaur.play('mAttack1', true);
-    }
+    // }
     if (
       this.input.on('pointermove', (pointer) => {
         // if (pointer.isDown) {
